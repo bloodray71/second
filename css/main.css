@@ -376,7 +376,9 @@ body {
         position: relative;
         margin: 0 auto;
     }
-
+    .foto-2 {
+        margin-left: 15%;
+    }
     .menu-icon {
         display: block;
     }
@@ -435,4 +437,3 @@ body {
         margin-bottom: 50px;
     }
 }
-
