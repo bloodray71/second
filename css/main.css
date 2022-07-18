@@ -25,10 +25,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+}
+.conteiner-flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .header {
-    background: #FAFAFA;
+    background: #F8EDF0;
 }
 
 .heder-logo {
@@ -118,7 +125,7 @@ body {
 
 /*end menu*/
 .second-section {
-    background: #FAFAFA;
+    background: #F8EDF0;
     height: 900px;
 }
 
@@ -190,7 +197,10 @@ body {
 .bonuses {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     margin-top: 80px;
+    margin-bottom: 80px;
+    
 }
 
 .bonus:first-child {
