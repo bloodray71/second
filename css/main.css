@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;600&family=Roboto:wght@500&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.conteiner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background: #FAFAFA;
+}
+
+.heder-logo {
+    margin-left: -60px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: all .2s;
+}
+
+.menu-link:hover {
+    color: #D23166;
+
+}
+
+.menu-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #150101;
+}
+
+.btn {
+    background: #D23166;
+    border-radius: 5px;
+    padding: 16px 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    color: black;
+}
+
+/*menu*/
+.menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    z-index: 100;
+}
+
+.menu-icon span:first-child {
+    top: 0;
+}
+
+.menu-icon span:last-child {
+    top: auto;
+    bottom: 0;
+}
+
+.menu-list.active {
+    transform: translateX(0)
+}
+
+.menu-icon.active span {
+    transform: scale(0);
+
+}
+
+.menu-icon.active span:first-child {
+    transform: rotate(-45deg);
+    top: 49%;
+}
+
+.menu-icon.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 49%;
+}
+
+/*end menu*/
+.second-section {
+    background: #FAFAFA;
+    height: 900px;
+}
+
+.first-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.second-title {
+    max-width: 665px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57.33px;
+}
+
+.second-title span {
+    color: #D23166;
+}
+
+.third-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0F0101;
+    max-width: 523px;
+    ;
+    margin-top: 35px;
+}
+
+.title {
+    margin-top: 285px;
+    z-index: 1;
+}
+
+.foto {
+    margin-top: 285px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+
+}
+
+.third-section {
+    background: white;
+}
+
+.bonuses-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bonuses-second-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.bonuses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.bonus:first-child {
+    margin-left: 0;
+}
+
+.bonus {
+    background: white;
+    box-shadow: 0 10px 25px rgba(72, 72, 72, .1);
+    margin-left: 30px;
+    width: 250px;
+    height: 200px;
+}
+
+.items-png {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.fourth-section {
+    background: #F8EDF0;
+}
+
+.fourth-title {}
+
+.fourth-h2 {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+}
+
+.fourth-p {
+    margin-top: 16px;
+    max-width: 442px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.fourth-btn {}
+
+@media (max-width:1189px) {
+    .foto {
+        margin-right: -150px;
+    }
+}
+
+@media (max-width:989px) {
+    .menu-list {
+        gap: 20px;
+    }
+
+    .foto {
+        margin-right: -250px;
+    }
+}
+
+@media (max-width:980px) {
+    .conteiner-flex {
+        display: block;
+    }
+    .title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .foto {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        background: white;
+        z-index: 100;
+    }
+
+    .menu-link {
+        font-size: 60px;
+    }
+
+    .bonuses {
+        display: block;
+    }
+
+    .bonus {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .bonus:first-child {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .fourth-title {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .fourth-p {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
