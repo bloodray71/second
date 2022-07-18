@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@400;600&family=Roboto:wght@500&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.conteiner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.conteiner-flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header {
+    background: #F8EDF0;
+}
+
+.heder-logo {
+    margin-left: -60px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: all .2s;
+}
+
+.menu-link:hover {
+    color: #D23166;
+
+}
+
+.menu-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #150101;
+}
+
+.btn {
+    background: #D23166;
+    border-radius: 5px;
+    padding: 16px 50px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+}
+
+/*menu*/
+.menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    z-index: 100;
+}
+
+.menu-icon span:first-child {
+    top: 0;
+}
+
+.menu-icon span:last-child {
+    top: auto;
+    bottom: 0;
+}
+
+.menu-list.active {
+    transform: translateX(0)
+}
+
+.menu-icon.active span {
+    transform: scale(0);
+
+}
+
+.menu-icon.active span:first-child {
+    transform: rotate(-45deg);
+    top: 49%;
+}
+
+.menu-icon.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 49%;
+}
+
+/*end menu*/
+.second-section {
+    background: #F8EDF0;
+    height: 900px;
+}
+
+.first-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.second-title {
+    max-width: 665px;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57.33px;
+}
+
+.second-title span {
+    color: #D23166;
+}
+
+.third-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0F0101;
+    max-width: 523px;
+    ;
+    margin-top: 35px;
+}
+
+.title {
+    margin-top: 285px;
+    z-index: 1;
+}
+
+.foto {
+    margin-top: 285px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+
+}
+
+.third-section {
+    background: white;
+}
+
+.bonuses-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bonuses-second-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.bonuses {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+.bonus:first-child {
+    margin-left: 0;
+}
+
+.bonus {
+    background: white;
+    box-shadow: 0 10px 25px rgba(72, 72, 72, .1);
+    margin-left: 30px;
+    width: 250px;
+    height: 200px;
+}
+
+.items-png {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.fourth-section {
+    background: #F8EDF0;
+}
+
+.fourth-title {}
+
+.fourth-h2 {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+}
+
+.fourth-p {
+    margin-top: 16px;
+    max-width: 442px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.fifth-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    text-align: center;
+    margin-top: 137px;
+}
+
+.cake-ferst-title {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 11px;
+}
+
+.cake-second-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 454px;
+    margin-bottom: 34px;
+}
+
+.prise-conteiner {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.prise {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.old-prise {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: line-through;
+}
+
+.cake-ferst-title-left {
+    margin-left: 20%;
+}
+
+.cake-conteiner {
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cake-nav {
+    margin-top: 63px;
+    margin-bottom: 51px;
+}
+
+.cake-list {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.cake-item {
+    list-style: none;
+}
+
+.cake-item {
+    transition: all .2s;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.cake-item:after {
+    margin-top: 7px;
+    content: "";
+    border-bottom: 3px solid rgba(224, 24, 60, 0.71);
+    display: block;
+    width: 0;
+}
+
+.cake-item:hover:after {
+    content: "";
+    border-bottom: 3px solid red;
+    display: block;
+    width: 100%;
+    transition: all .5s linear;
+}
+
+.sixth-section {
+    background: #F8EDF0;
+}
+
+.sixth-conteiner {
+    display: flex;
+}
+
+.phone-ice-cream {
+    position: absolute;
+    margin-top: 60px;
+}
+
+.sixth-title {
+    margin-top: 129px;
+    margin-left: 40%;
+    max-width: 621px;
+}
+
+.sixth-h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.sixth-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.title-btn {
+    display: flex;
+    margin-top: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.title-btn p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.title-btn:hover {
+    transform: scale(1.2);
+}
+
+.title-btn:last-child {
+    margin-bottom: 40px;
+}
+
+.a-phone {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+.seven-h2 {
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 190px;
+    max-width: 522px;
+    margin-bottom: 40px;
+}
+
+.form-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.input {
+    width: 503px;
+    height: 75px;
+    background: #FAFAFA;
+    border-radius: 5px;
+}
+
+.form-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    width: 134px;
+    height: 74px;
+    background: #D64374;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 370px;
+}
+
+.form-btn:hover {
+    color: black;
+}
+
+.foter {
+    background: black;
+}
+
+.foter-conteiner {
+    display: flex;
+}
+
+.ferst-column {
+    margin-top: 15px;
+}
+
+.p-column {
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 207px;
+}
+
+.p-ferst-column-second {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.second-column {
+    margin-left: 37px;
+}
+
+.social-icon {
+    cursor: pointer;
+}
+
+.second-column-p {
+    margin-bottom: 10px;
+}
+
+.third-column {
+    margin-left: 160px;
+}
+
+.third-column-p {
+    margin-top: 10px;
+}
+
+.fourth-column {
+    margin-left: 150px;
+}
+
+.input-foter {
+    width: 388px;
+    height: 55px;
+    border: 2px solid #D64374;
+    border-radius: 5px;
+    background: black;
+    margin-top: 10px;
+    color: white;
+}
+
+.foter-btn {
+    margin-top: 10px;
+    width: 125px;
+    height: 55px;
+    background: #D23166;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -125px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.foter-btn:hover {
+    color: black;
+}
+.bay-conteiner {
+    display: flex;
+    margin-top: 20px;
+    gap:15px;
+    margin-bottom: 125px;
+}
+@media (max-width:1189px) {
+    .foto {
+        margin-right: -150px;
+    }
+    .third-column {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:989px) {
+    .menu-list {
+        gap: 20px;
+    }
+
+    .foto {
+        margin-right: -250px;
+    }
+}
+
+@media (max-width:980px) {
+    .conteiner-flex {
+        display: block;
+    }
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .foto {
+        position: relative;
+        margin: 0 auto;
+        margin-left: 5%;
+    }
+
+    .foto-2 {
+        margin-left: 15%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .first-title {
+        margin-bottom: 10px;
+    }
+
+    .second-title {
+        max-width: 100%;
+    }
+
+    .third-title {
+        max-width: 100%;
+    }
+
+    .menu-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        background: white;
+        z-index: 100;
+    }
+
+    .menu-link {
+        font-size: 60px;
+    }
+
+    .bonuses {
+        display: block;
+    }
+
+    .bonus {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .bonus:first-child {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .fourth-title {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .fourth-p {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
