@@ -375,6 +375,7 @@ body {
     .foto {
         position: relative;
         margin: 0 auto;
+        margin-left: 5%;
     }
     .foto-2 {
         margin-left: 15%;
